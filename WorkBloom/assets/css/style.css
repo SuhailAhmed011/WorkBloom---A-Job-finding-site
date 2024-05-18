@@ -1,0 +1,150 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.column,
+.column-first {
+    float: left;
+    padding: 10px;
+    height: auto;
+    
+}
+
+.column {
+    width: 42.5%;
+}
+
+.column-10 {
+    width: 10% !important;
+}
+
+.column-first {
+    width: 15% !important;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #000;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+.active-btn {
+    background-color: #7e22ce!important;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    display: none;
+}
+
+.cookie{
+	width: 420px;
+    height: 72px;
+    background-color: #74b9ff;
+    position: fixed;
+    bottom: 20px;
+    border-radius: 10px;
+	left: 2%;
+	padding: 10px 20px;
+}
+
+.cookie .txt{
+	float: left;
+    width: 65%;
+}
+.txt p{
+	color:#fff;
+}
+
+.cookie .accept {
+    background-color: #fff;
+    color: #74b9ff ;
+    border-radius: 32px;
+    padding: 3px 23px;
+    font-size: 19px;
+    margin-top: 2.5%;	
+    margin-left: 3%;
+}
+
+.cookie .txt a {
+    color: black;
+}
+.cookie .accept:hover {
+	cursor: pointer;
+}
+
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pagination button {
+    margin: 0 5px;
+}
+
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .column,
+    .column-first,
+    .column-10 {
+        width: 100% !important;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    /* .column,
+    .column-first,
+    .column-10 {
+        width: 100% !important;
+    } */
+}
+
+
+@media only screen and (min-width: 768px) {}
+
+
+@media only screen and (min-width: 992px) {}
+
+
+@media only screen and (min-width: 1200px) {}
